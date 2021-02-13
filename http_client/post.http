@@ -1,0 +1,28 @@
+### create post
+POST {{host}}/api/v1/posts
+Content-Type: application/json
+
+{
+    "title": "HIHIHI" ,
+    "contents": "HI ???",
+    "mediaObjectIdList": []
+}
+
+### get post
+GET {{host}}/api/v1/posts/{{post_id}}
+
+### get postList
+GET {{host}}/api/v1/posts
+
+### update post
+PUT {{host}}/api/v1/posts/{{post_id}}
+Content-Type: application/json
+
+{
+    "title": "UPDATE !",
+    "contents": "UPDATED!@!@!@",
+    "mediaObjectIdList": []
+}
+
+### delete post
+DELETE {{host}}/api/v1/posts/{{post_id}}
